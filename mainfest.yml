@@ -1,0 +1,8 @@
+applications:
+  - name: proxy-app  # Change to your desired app name
+    memory: 125M
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    path: .  # Path to your application code
+    command: npm start
